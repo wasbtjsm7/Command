@@ -1,0 +1,146 @@
+Crear carpeta
+
+Iniciar git con el comando:
+git init
+
+Establece nombre de usuario para el actual repositorio
+
+git config user.name "w3schools-test"
+
+
+Checkea el estado del Git
+git status
+
+
+Agrega un archivo en Entorno de Puesta en Escena:
+
+git add index.html
+
+Ahora ejecute el comando "git status". Observará que el archivo esta preparado en el entorno.
+
+Comando que nos indica todos archivos nuevos, eleminados o modificados en el Entorno de Puesta en Escena.
+
+git add -A
+
+Commit a los archivos en el actual repositorio:
+
+git commit -m "Subida de archivos preparados para el Entorno de puesta en marcha"
+
+
+Checka la version compacta del comando status
+
+git status --short
+
+Commit a los archivos saltando el Entorno de puesta en marcha
+
+git commit -a -m "Subida de archivos saltando el Entorno de puesta en marcha"
+
+Visualizar el historial de commit ejecutados o realizados:
+git log
+
+
+Mas opciones del comando git status:
+git status -help
+
+Todas los opciones del git
+git help --all
+
+crea una rama ("direccion de subida de archivos"):
+git branch hello-world-images
+
+lista las rama(s) existentes.
+git branch
+
+Mover a la rama "hello-world-images"
+git checkout hello-world-images
+
+Verifica el cambio de rama del comando git checkout ejecutando el comando:
+git branch
+
+Crea una rama "hello-you" y mueve hacía ella defrente con el comando:
+git checkout -b hello-you
+
+
+Verifica el cambio de ramas del comando git checkout ejecutando el comando:
+git branch
+
+
+Une varios head o historial con el comando
+git merge hello-you
+
+Elimina una rama usando el siguiente comando:
+git branch -d hello-you
+
+Verifica el cambio de ramas del comando git checkout ejecutando el comando:
+git branch
+
+Agrega una rama remota con el comando
+git remote add origin https://github.com/x/y.git
+
+Verifica lo registrado como rama remota con el comando:
+git remote -v
+
+Si quieres usar una rama remota agregada ubicate en ella para trabajar con el comando:
+git remote set-url origin git@github.com:User/UserRepo.git
+
+Guardar los cambios en el repositorio remoto establecido con el comando:
+git push -u origin main
+
+
+Actualiza desde el repositorio remote establecido a el local
+git pull origin master
+
+Obtener todo el historial de cambios del origin de esta rama:
+git fetch origin
+
+Unir a la rama actual la rama master en origin
+git merge origin/master
+
+Actualizar la actual rama desde origin usando un comando corto:
+git pull origin
+
+Registrar los cambios de la actual rama al objeto remoto origin:
+git push origin
+
+Listar las ramas locales y remotas:
+git branch -a
+
+Listas solo las ramas remotas:
+git branch -r
+
+Clonar repositorio remoto como local:
+git clone https://abc.com/x/y.git
+
+Clonar repositorio remoto como local con el nombre "newlife":
+git clone https://abc.com/x/y.git newlife
+
+Renombrar la rama remota origin a "upstream"
+git remote rename origin upstream
+
+Ignorar las operaciones de git todos los archivos .temp en .gitignore:
+*.temp
+
+Ignorar las operaciones de git todos los archivos de cualquier carpeta de nombre "temp" en .gitignore:
+temp/
+
+Ignorar las operaciones de git todos los archivos los archivos temp1.log, temp2.log y temp3.log en .gitignore:
+temp?.log
+
+
+Ignorar las operaciones de git todos los archivos los archivos .log excepto main.log en .gitignore:
+*.log
+!main.log
+
+
+
+
+Example:
+git add -A
+
+git branch -M main
+git remote add origin https://github.com/wasbtjsm7/Javascript.git
+git commit -m "javascript archivos"
+git push -u origin main
+git push
+
+
